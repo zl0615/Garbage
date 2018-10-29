@@ -1,0 +1,51 @@
+NAME: EVPT__天津易众腾
+
+GROUP1 整车控制器
+
+
+/begin ID 0x18E5A2A6
+    /begin monitored_VCU 软件版本公司代号
+        StartByte 3
+        StartBit 24
+        Length_bit 8
+        physical
+        /begin conversion 
+        Unsigned
+              a 1 
+              b 0 
+        /end conversion        
+    /end monitored
+    /begin monitored_VCU 软件版本车型代号
+        StartByte 2
+        StartBit 16
+        Length_bit 8
+        physical
+        /begin conversion 
+        Unsigned
+              a 1 
+              b 0 
+        /end conversion        
+    /end monitored
+    /begin monitored_VCU 软件版本号1
+        StartByte 1
+        StartBit 8
+        Length_bit 8
+        physical
+        /begin conversion 
+        Unsigned
+              a 1 
+              b 0 
+        /end conversion        
+    /end monitored
+    /begin monitored_VCU 软件版本号2
+        StartByte 0
+        StartBit 0
+        Length_bit 8
+        physical
+        /begin conversion 
+        Unsigned
+              a 1 
+              b 0 
+        /end conversion        
+    /end monitored
+/end ID
